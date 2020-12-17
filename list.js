@@ -1,8 +1,14 @@
-var article = document.getElementById("letter")
+var article = document.getElementById("letter");
+var color = document.getElementById("background");
 
 function change(x){
     article.innerHTML = list[x];
-    
+    if(x == 0 || x == 2 || x == 4){
+        color.className = "bg-danger";
+    } else {
+        color.className = "bg-success";
+    }
+    console.log(color);
 }
 
 var list = [
