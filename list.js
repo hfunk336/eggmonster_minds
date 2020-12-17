@@ -1,13 +1,13 @@
-list = [];
+var article = document.getElementById("letter")
 
-var hunter = document.getElementById("hunter");
-var beckham = document.getElementById("beckham");
-var clint = document.getElementById("clint");
-var chris = document.getElementById("chris");
-var rami = document.getElementById("rami");
+function change(x){
+    article.innerHTML = list[x];
+}
 
-hunter.onclick = list[0];
-beckham.onclick = list[1];
-clint.onclick = list[2];
-chris.onclick = list[3];
-rami.onclick = list[4];
+var list = [
+    "Hunter lists", 
+    "Becky list",
+    "Clint list",
+    "Rami list",
+    "Chris List"
+];
